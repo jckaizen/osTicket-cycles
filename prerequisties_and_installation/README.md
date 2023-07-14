@@ -44,12 +44,49 @@ Next, we will remote into the VM using RDP (remote desktop protocol). Since I'm 
 <p>
   Create a new RDP connection and plug in the public IP of your VM (you can obtain this by going to the main page of your VM in Azure and copy it) and the username and password when you created first created your VM.
 </p>
-- <br />
+<br/>
 
 <p>
-- <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/jckaizen/osTicket-cycles/assets/57122203/6c31da46-d046-4e09-a9ac-9a2c8017d237" width="50%" alt="Turn Windows features on or off"/>
 </p>
 <p>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Once you are connected, go to Windows features and enable:
 </p>
-- <br />
+
+- <b>IIS Management Console</b> (Internet Information Services -> Web Management Tools -> <b>IIS management Console</b>)
+- <b>All of "Common HTTP Features"</b> (Internet Information Services -> World Wide Web Services -> <b>Common HTTP Features</b>)
+- <b>CGI</b> (Internet Information Services -> Application Development Features -> <b>CGI</b>)
+<br />
+
+<p>
+<img src="https://github.com/jckaizen/osTicket-cycles/assets/57122203/eb43f21c-4791-48c3-beec-0cbd82ac7569" width="40%" alt="Windows Features"/>
+</p>
+
+<p>Next, we will download and install the following things from the internet:</p>
+
+- PHP Manager for IIS
+- IIS URL Rewrite Module
+- Microsoft Visual C++ Redistributable x86
+- MySQL (select typical setup. In configuration wizard (post-install), select standard configuration then create a password for the root account)
+- PHP 7.3.8 (we'll just download this at this point)
+- osTicket 1.15.8 (we'll just download this at this point)
+
+<p>For the PHP install, make a folder called "PHP" directly on the C drive. Once done, unzip the contents of your downloaded PHP zip folder into the folder.</p>
+
+<p>
+<img src="https://github.com/jckaizen/osTicket-cycles/assets/57122203/09fb5fab-d385-4aab-be1d-f7d6806cdd54" width="40%" alt="C:\PHP folder"/>
+</p>
+
+<p>Open IIS as an Admin then go register PHP in PHP manager. The path of the file you're looking for is C:\PHP\php-cgi.exe. Reload the IIS server.</p>
+
+<p>
+<img src="https://github.com/jckaizen/osTicket-cycles/assets/57122203/91e0b876-a17b-4a07-b25c-321ef6659f0c" width="40%" alt="Windows Features"/>
+</p>
+
+<p>Unzip the osTicket folder you downloaded and copy the "upload" folder to C:\inetpub\wwwroot then rename "upload" to "osTicket".</p>
+
+<p>The site should be running so go to IIS then under "Sites->Default Web Site" is an osTicket folder. Click on it then on the right side of IIS, click "Browse :*80" </p>
+
+<p>
+<img src="https://github.com/jckaizen/osTicket-cycles/assets/57122203/90a57c31-9337-4386-ad52-268e70e6cd16" width="20%" alt="Windows Features"/>
+</p>
