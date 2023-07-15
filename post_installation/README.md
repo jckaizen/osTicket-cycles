@@ -73,19 +73,19 @@ Teams allows you to bring people from multiple department to work together on sp
 <img src="https://github.com/jckaizen/osTicket-cycles/assets/57122203/83c1fafd-b7fd-463b-88e2-34d9ca01a49f" width="40%"/>
 </p>
 
-<p>Now will create the end users of the help desk. Under Users->User Directory, click "Add User". then put in the full name and email address of the user. Click create. </p>
+<p>Now we will create the end users of the help desk. Under Users->User Directory, click "Add User". then put in the full name and email address of the user. Click create. </p>
 
 <p>
 <img src="https://github.com/jckaizen/osTicket-cycles/assets/57122203/265e1e8d-a71f-4d8a-82dc-5fc1d766cc64" width="40%"/>
 </p>
 
-<p>SLAs (servive level agreements) specify the severity of a ticket and how much time an agent is expected to work on it and when. Under Manage->SLA, we will add 3 SLAs, Sev-A, Sev-B, and Sev-C. Click on "Add New SLA Plan", put in the name then give each Sev their appropriate grace period and duration. So Sev-A will be 1 hour, 24/7. Sev-B will be 4 hours, 24/7. Sev-C will be 8 hours, business hours.</p>
+<p>SLAs (servive level agreements) specify the severity of a ticket and how much time an agent is expected to work on it and when. Under Manage->SLA, we will add 3 SLAs: Sev-A, Sev-B, and Sev-C. Click on "Add New SLA Plan", put in the name then give each Sev their appropriate grace period and duration. So Sev-A will be 1 hour, 24/7. Sev-B will be 4 hours, 24/7. Sev-C will be 8 hours, business hours.</p>
 
 <p>
 <img src="https://github.com/jckaizen/osTicket-cycles/assets/57122203/2ba6521c-9d46-417c-b5c7-61ffbe3139aa" width="40%"/>
 </p>
 
-<p>Help Topics are what end users use to generalize what their issuse are about. For example, if a user needs a password reset, then they will pick "Password Reset" and put in more details in the description. Under Manage->Help Topics, we will create:</p>
+<p>Help Topics are what end users use to generalize what their issues are about. For example, if an user needs a password reset, then they will pick "Password Reset" and put in more details in the description. Under Manage->Help Topics, we will create:</p>
 
 - Business Critical Outage
 - Personal Computer Issues
