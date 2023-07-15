@@ -114,7 +114,7 @@ Once you are connected, go to Windows features and enable:
 <img src="https://github.com/jckaizen/osTicket-cycles/assets/57122203/6e77152d-7afe-45da-b5ad-f4b44bd9b34d" width="40%" alt="All permissions for Everyone"/>
 </p>
 
-<p>Open HeidiSQL and create a new sesion and put in the root for the username and the password you created for the MySQL install. Connect to the session. Once inside create a new database called "osTicket".</p>
+<p>Open HeidiSQL and create a new sesion and put in the "root" for the username and the password you created for the MySQL install. Connect to the session. Once inside, create a new database called "osTicket".</p>
 
 <p>
 <img src="https://github.com/jckaizen/osTicket-cycles/assets/57122203/0952ecfe-36f6-4a49-b52c-c4da64995e34" width="40%"/>
